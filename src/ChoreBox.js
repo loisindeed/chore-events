@@ -19,7 +19,7 @@ const getNextDate = (frequency) => {
 
 // Helper function to generate Google Calendar link
 const generateGoogleCalendarLink = (choreName, nextDate) => {
-    const eventName = `Chore: ${choreName}`;
+    const eventName = `🧹Chore: ${choreName}`;
     const startDate = nextDate.replace(/-/g, '');
     const endDate = new Date(nextDate);
     endDate.setDate(endDate.getDate() + 1); // All-day event, end date should be one day later
